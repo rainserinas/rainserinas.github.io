@@ -1,0 +1,30 @@
+body {
+    background-image: url("../resources/Asset.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.navbar-inner {
+    background-color: transparent !important;
+}
+
+.btn {
+    background: #ff3385;
+    border-color: transparent;
+}
+
+a {
+    color: white !important;
+    font-weight: bold;
+}
+
+#maincontainer {
+    margin-top: 250px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+}
