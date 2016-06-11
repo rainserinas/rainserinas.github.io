@@ -65,6 +65,19 @@ p {font-size: 16px;}
   margin-top: 30px;
 }
 
+.who h2{
+  margin-bottom: 0px;
+}
+
+.who img{
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.what h3{
+  margin-bottom: 45px;
+}
+
 .help h3 , p{
   margin-bottom: 0px;
 }
