@@ -4,12 +4,18 @@
   <title>Rain's Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link href="lib/fonts.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css"/>
+
+  <!-- bootstrap image gallery -->
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <!-- bootstrap image gallery -->
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -30,6 +36,7 @@
           <li><a href=".who">WHO</a></li>
           <li><a href=".what">WHAT</a></li>
           <li><a href=".help">HELP YOU</a></li>
+          <li><a href=".works">WORKS</a></li>
         </ul>
       </div>
     </div>
@@ -43,7 +50,7 @@
   </div>
 
   <!-- Second Container -->
-  <div class="container-fluid bg-2 text-center what">
+  <div class="container-fluid bg-6 text-center what">
     <h3 class="margin title">What Am I?</h3>
 
     <div class="row description-container text-center">
@@ -72,6 +79,77 @@
   </div>
 
   <!-- Fourth Container (Grid) -->
+  <div class="container-fluid bg-4 works">
+      <div class="text-center">
+        <h3 class="margin title">What i've been up to</h3><br>
+      </div>
+      <div class="help-div text-center">
+          <!-- <div>
+            <div class="image-1">
+              <img class="portfolio-img img-responsive" src="image/mark print screen.png" width="550" height="350">
+              <p>MARK Tracking application</p>
+              <p>Frontend UI / Backend functionality</p>
+              <p>Displays coordinates from gps data via google maps and generates daily reports for client references</p>
+              <a href="#" class="btn btn-default btn-lg">VIEW SITE</a>
+            </div>
+            <div class="image-2">
+              <img class="portfolio-img pldt-promo img-responsive" src="image/pldt promo print screen.png" width="550" height="550">
+              <p>PLDT SME Promo page</p>
+              <p>Frontend UI / Wordpress</p>
+              <p>Built on to of wordpress platform with responsive design</p>
+              <a href="#" class="btn btn-default btn-lg">VIEW SITE</a>
+            </div>
+          </div> -->
+
+          <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+          <div id="blueimp-gallery" class="blueimp-gallery">
+              <!-- The container for the modal slides -->
+              <div class="slides"></div>
+              <!-- Controls for the borderless lightbox -->
+              <h3 class="title"></h3>
+              <a class="prev">‹</a>
+              <a class="next">›</a>
+              <a class="close">×</a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+              <!-- The modal dialog, which will be used to wrap the lightbox content -->
+              <div class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title"></h4>
+                          </div>
+                          <div class="modal-body next"></div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default pull-left prev">
+                                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                  Previous
+                              </button>
+                              <button type="button" class="btn btn-primary next">
+                                  Next
+                                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="links">
+            <a href="image/mark print screen.png" title="Banana" data-gallery>
+                <img src="image/mark print screen.png" width="250" height="250" title="Click me to preview">
+            </a>
+            <a href="image/pldt promo print screen.png" title="Apple" data-gallery>
+                <img src="image/pldt promo print screen.png" width="250" height="250" title="Click me to preview">
+            </a>
+        </div>
+
+          <!-- bootstrap image gallery end -->
+      </div>
+  </div>
+
+  <!-- Fourth Container (Grid) -->
   <div class="container-fluid bg-5 help">
       <div class="text-center">
         <h3 class="margin title">I can help you.</h3><br>
@@ -79,11 +157,7 @@
       <div class="text-center help-div">
           <p>I'm open for freelance work.</p>
           <p>If you have a project that you want to start. I can be of help or you have something cool to discuss feel free to get in touch. </p>
-
-          <form method="post" action="mailto:raineirserinas@gmail.com" >
-            <button type="submit" class="btn btn-default btn-lg send-me"> <i class="fa fa-envelope-o" aria-hidden="true"></i> EMAIL ME </button>
-          </form>
-
+          <a href="mailto:EMAILADDRESS" class="btn btn-default btn-lg send-me"> <i class="fa fa-envelope-o" aria-hidden="true"></i> EMAIL ME </a>
       </div>
   </div>
 
@@ -92,6 +166,11 @@
     <p> <i class="fa fa-copyright" aria-hidden="true"></i> 2016 raineir john serinas. All rights reserve. </a></p>
     <a href="https://www.facebook.com/rainserinas" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
   </footer>
+
+
+
+  <script src="js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 </html>
