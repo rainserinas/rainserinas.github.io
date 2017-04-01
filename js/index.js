@@ -1,10 +1,20 @@
-$(document).ready(function () {
+$(function(){
+    smoothScrolling();
+    easterEgg();
+});
+
+function easterEgg () {
+    console.log("Crafted by Raineir John Serinas");
+}
+
+function smoothScrolling () {
     $('a').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
         }, 950);
         return false;
     });
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
         /* Check the location of each desired element */
@@ -17,4 +27,4 @@ $(document).ready(function () {
             }
         });
     });
-});
+}
