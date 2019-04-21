@@ -667,6 +667,12 @@ a.dotted-link:hover {
   }
 }
 
+@media (max-width: 991px) {
+	.header .profile-image {
+		margin-top: 35px;
+	}
+}
+
 @media (min-width: 1400px) {
   .container {
     width: 1360px;
